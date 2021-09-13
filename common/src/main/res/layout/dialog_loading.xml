@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_loading_dialog"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.zhongke.common.widget.ZKLoadingImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:loading_title="record_anim_"/>
+
+    <com.zhongke.common.widget.ZKLoadingTextView
+        android:id="@+id/tv_loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:minWidth="55dp"
+        android:text="加载中"
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+</LinearLayout>

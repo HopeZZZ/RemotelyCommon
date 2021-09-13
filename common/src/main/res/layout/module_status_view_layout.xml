@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 请求数据时的   loading View-->
+    <com.zhongke.common.widget.ZKLoadingImageView
+        android:id="@+id/iv_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:loading_title="anim_"
+        android:layout_gravity="center" />
+
+    <FrameLayout
+        android:id="@+id/fl_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="70dp"
+        android:visibility="invisible"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="空空如也~"
+            android:textColor="#77000000"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/iv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_back" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_load_failure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/bg_load_failure3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="哎呀，网络出错了"
+            android:textColor="#404050"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_reload"
+            android:layout_width="182dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="124dp"
+            android:background="@color/purple_200"
+            android:gravity="center"
+            android:text="再给我一次机会"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

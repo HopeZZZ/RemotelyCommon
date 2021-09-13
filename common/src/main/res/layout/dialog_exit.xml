@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:paddingLeft="@dimen/dp16"
+    android:paddingRight="@dimen/dp16"
+    android:paddingBottom="@dimen/dp34">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_bg_exit"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvrestart"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="重新拍摄"
+            android:textColor="#2CABF3"
+            android:textSize="@dimen/dp17"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#F1F1F1" />
+
+        <TextView
+            android:id="@+id/tvexit"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="退出"
+            android:textColor="#666666"
+            android:textSize="@dimen/dp17"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvcancel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/base_bg_exit"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#666666"
+        android:textSize="@dimen/dp17"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

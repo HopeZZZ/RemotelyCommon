@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dp114"
+    android:layout_height="@dimen/dp114"
+    android:background="@drawable/bg_loading_dialog"
+    android:orientation="vertical">
+<!--圆形进度条-->
+    <com.zhongke.common.widget.ZKSimpleRoundProgress
+        android:id="@+id/simple_round"
+        android:layout_width="@dimen/dp37"
+        android:layout_height="@dimen/dp37"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp17"
+        app:srp_max="100"
+        app:srp_roundWidth="4dip"
+        app:srp_startAngle="270"
+        app:srp_style="STROKE"
+        tools:ignore="MissingPrefix" />
+<!--扇形进度条
+    <com.zhongke.common.widget.ZKSimpleRoundProgress
+        android:id="@+id/simple_round"
+        android:layout_width="@dimen/dp37"
+        android:layout_height="@dimen/dp37"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp17"
+        app:srp_max="100"
+        app:srp_startAngle="270"
+        app:srp_style="FILL"
+        tools:ignore="MissingPrefix" />
+-->
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/simple_round"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="发布中"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ZKLoadingView">
+        <attr name="loading_title" format="string" />
+        <attr name="loading_count" format="integer" />
+        <attr name="loading_duration" format="integer" />
+        <attr name="loading_isRepeat" format="boolean" />
+        <attr name="loading_isAutoPlay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SmartRefreshLayout">
+        <attr name="android:clipChildren"/>
+        <attr name="android:clipToPadding"/>
+        <attr name="srlPrimaryColor"/>
+        <attr name="srlAccentColor"/>
+        <attr name="srlReboundDuration" format="integer"/>
+        <attr name="srlHeaderHeight" format="dimension"/>
+        <attr name="srlFooterHeight" format="dimension"/>
+        <attr name="srlHeaderInsetStart" format="dimension"/>
+        <attr name="srlFooterInsetStart" format="dimension"/>
+        <attr name="srlDragRate" format="float"/>
+        <attr name="srlHeaderMaxDragRate" format="float"/>
+        <attr name="srlFooterMaxDragRate" format="float"/>
+        <attr name="srlHeaderTriggerRate" format="float"/>
+        <attr name="srlFooterTriggerRate" format="float"/>
+        <attr name="srlEnableRefresh" format="boolean"/>
+        <attr name="srlEnableLoadMore" format="boolean"/>
+        <attr name="srlEnableHeaderTranslationContent" format="boolean"/>
+        <attr name="srlEnableFooterTranslationContent" format="boolean"/>
+        <attr name="srlHeaderTranslationViewId" format="reference"/>
+        <attr name="srlFooterTranslationViewId" format="reference"/>
+        <attr name="srlEnablePreviewInEditMode" format="boolean"/>
+        <attr name="srlEnableAutoLoadMore" format="boolean"/>
+        <attr name="srlEnableOverScrollBounce" format="boolean"/>
+        <attr name="srlEnablePureScrollMode" format="boolean"/>
+        <attr name="srlEnableNestedScrolling" format="boolean"/>
+        <attr name="srlEnableScrollContentWhenLoaded" format="boolean"/>
+        <attr name="srlEnableScrollContentWhenRefreshed" format="boolean"/>
+        <attr name="srlEnableLoadMoreWhenContentNotFull" format="boolean"/>
+        <attr name="srlEnableFooterFollowWhenLoadFinished" format="boolean"/>
+        <attr name="srlEnableFooterFollowWhenNoMoreData" format="boolean"/>
+        <attr name="srlEnableClipHeaderWhenFixedBehind" format="boolean"/>
+        <attr name="srlEnableClipFooterWhenFixedBehind" format="boolean"/>
+        <attr name="srlEnableOverScrollDrag" format="boolean"/>
+        <attr name="srlDisableContentWhenRefresh" format="boolean"/>
+        <attr name="srlDisableContentWhenLoading" format="boolean"/>
+        <attr name="srlFixedHeaderViewId" format="reference"/>
+        <attr name="srlFixedFooterViewId" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SmartRefreshLayout_Layout">
+        <attr name="layout_srlSpinnerStyle"/>
+        <attr name="layout_srlBackgroundColor" format="color"/>
+    </declare-styleable>
+
+    <style name="SmartRefreshStyle">
+        <item name="srlPrimaryColor">@android:color/holo_blue_dark</item>
+        <item name="srlAccentColor">@android:color/white</item>
+        <item name="srlReboundDuration">300</item>
+        <item name="srlHeaderHeight">100dp</item>
+        <item name="srlFooterHeight">60dp</item>
+        <item name="srlHeaderInsetStart">0dp</item>
+        <item name="srlFooterInsetStart">0dp</item>
+        <item name="srlDragRate">0.5</item>
+        <item name="srlHeaderMaxDragRate">2.5</item>
+        <item name="srlFooterMaxDragRate">2.5</item>
+        <item name="srlHeaderTriggerRate">1</item>
+        <item name="srlFooterTriggerRate">1</item>
+        <!--<item name="srlEnableRefresh">true</item>-->
+        <!--<item name="srlEnableLoadMore">true</item>-->
+        <!--<item name="srlEnableHeaderTranslationContent">true</item>-->
+        <!--<item name="srlEnableFooterTranslationContent">true</item>-->
+        <!--<item name="srlHeaderTranslationViewId">-1</item>-->
+        <!--<item name="srlFooterTranslationViewId">-1</item>-->
+        <item name="srlEnablePreviewInEditMode">true</item>
+        <item name="srlEnableAutoLoadMore">true</item>
+        <item name="srlEnableOverScrollDrag">false</item>
+        <item name="srlEnableOverScrollBounce">true</item>
+        <item name="srlEnablePureScrollMode">false</item>
+        <item name="srlEnableNestedScrolling">true</item>
+        <item name="srlEnableScrollContentWhenLoaded">true</item>
+        <item name="srlEnableScrollContentWhenRefreshed">true</item>
+        <item name="srlEnableLoadMoreWhenContentNotFull">true</item>
+        <!--<item name="srlEnableFooterFollowWhenLoadFinished" format="boolean"/>-->
+        <item name="srlEnableFooterFollowWhenNoMoreData">false</item>
+        <item name="srlEnableClipHeaderWhenFixedBehind">true</item>
+        <item name="srlEnableClipFooterWhenFixedBehind">true</item>
+        <item name="srlDisableContentWhenRefresh">false</item>
+        <item name="srlDisableContentWhenLoading">false</item>
+        <!--<item name="srlFixedHeaderViewId" format="reference"/>-->
+        <!--<item name="srlFixedFooterViewId" format="reference"/>-->
+    </style>
+
+    <!--CommonRecyclerView的自定义属性 -->
+    <declare-styleable name="CommonRecyclerView">
+        <!-- 是否可以下拉刷新的标志位-->
+        <attr name="is_pull_down_refresh" format="boolean"/>
+        <!-- 是否可以上拉加载更多-->
+        <attr name="is_load_more" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="FrameAnimImageView">
+        <attr name="anim_isRepeat" format="boolean" />
+        <attr name="anim_isAutoPlay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TabButton">
+        <attr name="tbn_icon_array_id" format="reference" />
+        <attr name="tbn_tip" format="string" />
+        <attr name="tbn_icon_size" format="dimension" />
+        <attr name="tbn_text_size" format="dimension" />
+        <attr name="tbn_text_color_checked" format="color" />
+        <attr name="tbn_text_color_unchecked" format="color" />
+        <attr name="tbn_checked" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleRoundProgress">
+        <!--圆环颜色-->
+        <attr name="srp_roundColor" format="color" />
+        <!--圆环的宽度-->
+        <attr name="srp_roundWidth" format="dimension" />
+        <!--圆环上的进度颜色-->
+        <attr name="srp_progressColor" format="color" />
+        <!--圆环上的进度宽度-->
+        <attr name="srp_progressWidth" format="dimension" />
+        <!--进度值的最大值，一般为100-->
+        <attr name="srp_max" format="integer" />
+        <!--开始角度，指定进度初始点的绘制位置-->
+        <attr name="srp_startAngle" format="integer" />
+        <!--样式，空心还是实心-->
+        <attr name="srp_style">
+            <enum name="STROKE" value="0" />
+            <enum name="FILL" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>

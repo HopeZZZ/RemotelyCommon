@@ -1,0 +1,3 @@
+rootProject.name = "RemotelyCommon"
+include ':app'
+include ':common'

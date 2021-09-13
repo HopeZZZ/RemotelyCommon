@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="srl_content_empty">The content view in SmartRefreshLayout is empty. Do you forget to add it in xml layout file?</string>
+    <string name="srl_component_falsify" formatted="false">%s falsify area,\n Represents the height[%.1fdp] of drag at run time,\n It does not show anything.</string>
+    <string name="srl_footer_pulling">Pull Up To Load More</string>
+    <string name="srl_footer_release">Release To Load More</string>
+    <string name="srl_footer_loading">Loading…</string>
+    <string name="srl_footer_refreshing">Wait For Refreshing…</string>
+    <string name="srl_footer_finish">Load Success</string>
+    <string name="srl_footer_failed">Load Failed</string>
+    <string name="srl_footer_nothing">No More Data</string>
+    <string name="brvah_loading">正在加载中...</string>
+    <string name="brvah_load_failed">加载失败，请点我重试</string>
+    <string name="brvah_load_end">没有更多数据</string>
+    <string name="brvah_load_complete">点击加载更多</string>
+
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用需要打开定位功能\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="gpsNotifyMsg">\n\n请点击\"设置\"-\"定位服务\"-打开GPS定位功能。</string>
+    <string name="porbiddenNotifyMsg">\n\n请点击\"设置\"-打开定位权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <color name="base_color_2cabf3">#2CABF3</color>
+    <string name="protocol">1.为了您浏览、下载短视频及缓存相关文件，我们会申请存储权限，同时，为了信息推送和安全 风控所需，我们会申请系统权限收集设备信息、日志信息。\n\n 2.为了基于您的所在位置向您推荐内容、在您的个人主页显示位置信息，或经您选择在您发布的视频中显示位置信息，我们可能会申请位置权限。\n\n 3.为了更好的向您提供网络直播、发布信息、注册认证、交流互动、搜索查询等相关服务，我们根据您使用服务的具体功能的需要，在应用启动、运行时收集您的电话号码、通讯录等必要的个人信息。您有权拒绝提供这些信息，但这将导致您无法使用相关特定功能。\n\n 4.我们会努力采取各种安全技术保护您的个人信息，未经您同意，我们不会从第三方获取、共享或对外提供您的信息。\n\n 5.我们尊重您的选择权，您可以访问、更正、删除您的个人信息并管理您的授权，我们也为您提供注销、投诉渠道。</string>
+</resources>
